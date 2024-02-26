@@ -1,0 +1,12 @@
+[run]
+omit =
+    # omit anything in a tests directory anywhere
+    */tests/*
+    # omit anything in a .local directory anywhere
+    */.local/*
+    # omit everything in /usr
+    /usr/*
+# Take all sub folders into account
+source = .
+# Only report coverage for exam folder
+# source = exam

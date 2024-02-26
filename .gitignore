@@ -1,0 +1,11 @@
+/temp
+**/__pycache__
+**/.pytest_cache
+/.idea
+
+.coverage
+
+tex/*.log
+tex/*.out
+tex/*.aux
+tex/*.gz

@@ -7,7 +7,7 @@ This repository will be updated throughout the course.
 
 #### Structure 
 ```
-wise_23_24
+clean_code_ws_2324
   ┠─ exam            # (sample solution of the project)
   ┠─ examples        # (code examples from the lecture)
   ┠─ exercises       # (coding exercises and sample solutions)
@@ -33,7 +33,7 @@ First you need to create/provide an ssh key to gitlab. Please follow this tutori
 **Clone this repository**
 ```
 # SSH Checkout:
-git clone git@gitlab.gwdg.de:cleancode/wise_22_23.git 
+git clone git@gitlab.gwdg.de:cleancode/clean_code_ws_2324.git 
 ```
 
 **Pull changes from master branch**

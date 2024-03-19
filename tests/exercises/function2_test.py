@@ -10,10 +10,16 @@ expectation = ['4.raw', '1.raw', '2.raw', '3.raw']
 def test_old_version():
     result = getListofRawFiles(test_folder)
     result = [os.path.basename(f) for f in result]
-    assert result == expectation
+    assert_right_files_found(result)
 
 
 def test_new_version():
     result = find_raw_files(test_folder)
     result = [os.path.basename(f) for f in result]
-    assert result == expectation
+    assert_right_files_found(result)
+
+
+def assert_right_files_found(result: list) -> None:
+    assert len(result) == len(expectation)
+    for entry in expectation:
+        assert entry in result

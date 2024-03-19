@@ -80,7 +80,13 @@ git push --set-upstream origin <INITIALS>_<BRANCH_NAME>
 ```
 
 ### Testing
-Tests can e executed by typing `pytest` on the command line.
+Run 
+```bash 
+pip install pytest 
+pip install pytest-cov
+```
+
+Then, tests can e executed by typing `pytest` on the command line.
 
 Use `pytest --cov` to inspect the coverage statistics.
 

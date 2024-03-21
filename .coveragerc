@@ -7,6 +7,6 @@ omit =
     # omit everything in /usr
     /usr/*
 # Take all sub folders into account
-source = .
+# source = .
 # Only report coverage for exam folder
-# source = exam
+source = exam

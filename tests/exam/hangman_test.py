@@ -60,15 +60,14 @@ def test_max_attempts(mocker):
 
 # def test_win_game(mocker):
 #     game = Hangman()
+#     game.random_word = 'ivy'
 #     mocker.patch('builtins.input', return_value ='i')
-#     game.make_new_guess()
 #     mocker.patch('builtins.input', return_value ='v')
-#     game.make_new_guess()
 #     mocker.patch('builtins.input', return_value ='y')
-#     game.make_new_guess()
-#     assert game.current_word == 'ivy'
+#     game.play_game()
+    # assert ...
     
-def test_win_game2(mocker): 
+def test_win_game_alternative(mocker): 
     printer = mocker.patch('builtins.print')
     game = Hangman()
     game.random_word = 'ivy'

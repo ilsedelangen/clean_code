@@ -61,14 +61,14 @@ class Hangman():
         self.check_character(input_character)
         self.update_word()
         self.report_progress()
-        self.check_if_won()
+        self.check_if_won() # Only for testing purposes, otherwise this line is not needed
         
-    # def play_game(self, input):
-    #     while self.current_word != self.random_word:
-    #         self.make_new_guess(input)
-    #     self.win_game()
+    def play_game(self):
+        while self.current_word != self.random_word:
+            self.make_new_guess()
+        self.win_game()
     
-    def check_if_won(self):
+    def check_if_won(self): # Work in progress, currently only for testing purposes
         if self.current_word == self.random_word:
             self.win_game()
         
@@ -78,14 +78,10 @@ class Hangman():
     def win_game(self):
         print('Congratulations!')
     
-    
+if __name__ == "__main__":    
+    game = Hangman()    
+    game.play_game()
 
-# game = Hangman()    
-# game.random_word = 'ivy'
-# game.make_new_guess('i')
-# game.make_new_guess('v')
-# game.make_new_guess('y')
-# game.make_new_guess('z')
 
 
 
